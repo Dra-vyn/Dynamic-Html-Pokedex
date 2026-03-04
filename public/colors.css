@@ -44,7 +44,7 @@
   text-align: center;
   text-transform: capitalize;
   display: flex;
-  gap: 2px;
+  /* gap: 2p  x; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -70,7 +70,7 @@ button {
 } */
 
 .types .grass,
-.nav-bar > .grass,
+#nav-bar > .grass,
 #grass:hover,
 .grass #grass {
   box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
@@ -79,7 +79,7 @@ button {
 }
 
 .types .poison,
-.nav-bar > .poison,
+#nav-bar > .poison,
 #poison:hover,
 .poison #poison {
   box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
@@ -88,7 +88,7 @@ button {
 }
 
 .types .fire,
-.nav-bar > .fire,
+#nav-bar > .fire,
 #fire:hover,
 .fire #fire {
   box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
@@ -97,7 +97,7 @@ button {
 }
 
 .types .flying,
-.nav-bar > .flying,
+#nav-bar > .flying,
 #flying:hover,
 .flying #flying {
   box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
@@ -106,7 +106,7 @@ button {
 }
 
 .types .water,
-.nav-bar > .water,
+#nav-bar > .water,
 #water:hover,
 .water #water {
   box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
@@ -115,7 +115,7 @@ button {
 }
 
 .types .bug,
-.nav-bar > .bug,
+#nav-bar > .bug,
 #bug:hover,
 .bug #bug {
   box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
@@ -124,7 +124,7 @@ button {
 }
 
 .types .normal,
-.nav-bar > .normal,
+#nav-bar > .normal,
 #normal:hover,
 .normal #normal {
   box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
@@ -133,7 +133,7 @@ button {
 }
 
 .types .ground,
-.nav-bar > .ground,
+#nav-bar > .ground,
 #ground:hover,
 .ground #ground {
   box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
@@ -142,7 +142,7 @@ button {
 }
 
 .types .fairy,
-.nav-bar > .fairy,
+#nav-bar > .fairy,
 #fairy:hover,
 .fairy #fairy {
   box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
@@ -151,7 +151,7 @@ button {
 }
 
 .types .fighting,
-.nav-bar > .fighting,
+#nav-bar > .fighting,
 #fighting:hover,
 .fighting #fighting {
   box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
@@ -160,7 +160,7 @@ button {
 }
 
 .types .electric,
-.nav-bar > .electric,
+#nav-bar > .electric,
 #electric:hover,
 .electric #electric {
   box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
@@ -169,7 +169,7 @@ button {
 }
 
 .types .psychic,
-.nav-bar > .psychic,
+#nav-bar > .psychic,
 #psychic:hover,
 .psychic #psychic {
   box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
@@ -178,7 +178,7 @@ button {
 }
 
 .types .rock,
-.nav-bar > .rock,
+#nav-bar > .rock,
 #rock:hover,
 .rock #rock {
   box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
@@ -187,7 +187,7 @@ button {
 }
 
 .types .ice,
-.nav-bar > .ice,
+#nav-bar > .ice,
 #ice:hover,
 .ice #ice {
   box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
@@ -196,7 +196,7 @@ button {
 }
 
 .types .dragon,
-.nav-bar > .dragon,
+#nav-bar > .dragon,
 #dragon:hover,
 .dragon #dragon {
   box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
@@ -205,7 +205,7 @@ button {
 }
 
 .types .ghost,
-.nav-bar > .ghost,
+#nav-bar > .ghost,
 #ghost:hover,
 .ghost #ghost {
   box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
@@ -214,7 +214,7 @@ button {
 }
 
 .types .dark,
-.nav-bar > .dark,
+#nav-bar > .dark,
 #dark:hover,
 .dark #dark {
   box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
@@ -223,7 +223,7 @@ button {
 }
 
 .types .steel,
-.nav-bar > .steel,
+#nav-bar > .steel,
 #steel:hover,
 .steel #steel {
   box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);

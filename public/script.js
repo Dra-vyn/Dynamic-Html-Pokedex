@@ -10,7 +10,7 @@ const createFragments = (tag, attribute, contents) => {
     return element;
   }
 
-  contents.forEach(content => element.append(createFragments(...content)));
+  contents.forEach(content => element.appendChild(createFragments(...content)));
 
   return element;
 };
@@ -84,7 +84,7 @@ const filterPokemonByType = (dataSet, type) => {
 const fetchPokemon = async (type) =>
   fetch('/data/pokemon.json')
     .then(data => data.json())
-    .then(data => filterPokemonByType(data, type));
+    .then(data => type === 'all' ? data : filterPokemonByType(data, type));
 
 const generatePokemonCards = async (type) => {
   const pokemon = await fetchPokemon(type);
@@ -92,17 +92,36 @@ const generatePokemonCards = async (type) => {
   return createAllPokemonCards(pokemon);
 }
 
-const init = async () => {
-  const main = document.querySelector('main');
+const createContainer = () => {
   const container = document.createElement('div');
   container.setAttribute('id', 'container');
 
-  const divs = await generatePokemonCards('flying')
+  return container;
+}
 
-  divs.forEach(div => container.append(div));
-  main.append(container);
-console.log(main)
-  return main;
+const generatePage = async (e) => {
+  e.preventDefault();
+  const ul = document.querySelector('#container');
+  const main = document.querySelector('main');
+  main.removeChild(ul);
+  const container = createContainer();
+  
+  const divs = await generatePokemonCards(e.target.textContent)
+  
+  divs.forEach(div => container.appendChild(div));
+  main.appendChild(container);
+}
+
+const init = async () => {
+  const navBar = document.querySelector('#nav-bar');
+  const main = document.querySelector('main');
+  const container = createContainer();
+  const divs = await generatePokemonCards('all')
+  
+  divs.forEach(div => container.appendChild(div));
+  main.appendChild(container);
+  
+  navBar.addEventListener('click', generatePage)
 }
 
 window.onload = init;
