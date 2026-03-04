@@ -1,0 +1,368 @@
+:root {
+  --grass: mediumseagreen;
+  --poison: mediumpurple;
+  --fire: goldenrod;
+  --flying: steelblue;
+  --water: dodgerblue;
+  --bug: brown;
+  --normal: gray;
+  --ground: peru;
+  --fairy: hotpink;
+  --fighting: crimson;
+  --electric: hsl(51deg 73% 50%);
+  --psychic: orange;
+  --rock: dimgray;
+  --ice: darkcyan;
+  --dragon: mediumaquamarine;
+  --ghost: black;
+  --dark: slategray;
+  --steel: steelblue;
+  --all: dimgray;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#side-bar {
+  width: 15vw;
+  height: 100%;
+  background-color: rgb(244, 244, 244);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  padding-top: 1.5em;
+}
+
+#nav-bar {
+  width: 100%;
+  list-style: none;
+  text-align: center;
+  text-transform: capitalize;
+  display: flex;
+  gap: 2px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  width: 100%;
+}
+
+button {
+  width: 100%;
+  height: 100%;
+  line-height: 2.8em;
+  border-bottom: 1px solid rgb(231, 221, 221);
+}
+
+/* a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  font-size: 24px;
+  color: rgb(109, 109, 109);
+} */
+
+.types .grass,
+.nav-bar > .grass,
+#grass:hover,
+.grass #grass {
+  box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
+  color: white;
+  background-color: var(--grass);
+}
+
+.types .poison,
+.nav-bar > .poison,
+#poison:hover,
+.poison #poison {
+  box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
+  color: white;
+  background-color: var(--poison);
+}
+
+.types .fire,
+.nav-bar > .fire,
+#fire:hover,
+.fire #fire {
+  box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
+  color: white;
+  background-color: var(--fire);
+}
+
+.types .flying,
+.nav-bar > .flying,
+#flying:hover,
+.flying #flying {
+  box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
+  color: white;
+  background-color: var(--flying);
+}
+
+.types .water,
+.nav-bar > .water,
+#water:hover,
+.water #water {
+  box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
+  color: white;
+  background-color: var(--water);
+}
+
+.types .bug,
+.nav-bar > .bug,
+#bug:hover,
+.bug #bug {
+  box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
+  color: white;
+  background-color: var(--bug);
+}
+
+.types .normal,
+.nav-bar > .normal,
+#normal:hover,
+.normal #normal {
+  box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
+  color: white;
+  background-color: var(--normal);
+}
+
+.types .ground,
+.nav-bar > .ground,
+#ground:hover,
+.ground #ground {
+  box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
+  color: white;
+  background-color: var(--ground);
+}
+
+.types .fairy,
+.nav-bar > .fairy,
+#fairy:hover,
+.fairy #fairy {
+  box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
+  color: white;
+  background-color: var(--fairy);
+}
+
+.types .fighting,
+.nav-bar > .fighting,
+#fighting:hover,
+.fighting #fighting {
+  box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
+  color: white;
+  background-color: var(--fighting);
+}
+
+.types .electric,
+.nav-bar > .electric,
+#electric:hover,
+.electric #electric {
+  box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
+  color: white;
+  background-color: var(--electric);
+}
+
+.types .psychic,
+.nav-bar > .psychic,
+#psychic:hover,
+.psychic #psychic {
+  box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
+  color: white;
+  background-color: var(--psychic);
+}
+
+.types .rock,
+.nav-bar > .rock,
+#rock:hover,
+.rock #rock {
+  box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
+  color: white;
+  background-color: var(--rock);
+}
+
+.types .ice,
+.nav-bar > .ice,
+#ice:hover,
+.ice #ice {
+  box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
+  color: white;
+  background-color: var(--ice);
+}
+
+.types .dragon,
+.nav-bar > .dragon,
+#dragon:hover,
+.dragon #dragon {
+  box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
+  color: white;
+  background-color: var(--dragon);
+}
+
+.types .ghost,
+.nav-bar > .ghost,
+#ghost:hover,
+.ghost #ghost {
+  box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
+  color: white;
+  background-color: var(--ghost);
+}
+
+.types .dark,
+.nav-bar > .dark,
+#dark:hover,
+.dark #dark {
+  box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
+  color: white;
+  background-color: var(--dark);
+}
+
+.types .steel,
+.nav-bar > .steel,
+#steel:hover,
+.steel #steel {
+  box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
+  color: white;
+  background-color: var(--steel);
+}
+
+#nav-bar > .all,
+#all:hover,
+.all #all {
+  box-shadow: 2px 2px 2px 2px rgb(184, 183, 183);
+  color: white;
+  background-color: var(--all);
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+#container {
+  width: 85%;
+  height: 100%;
+  margin-left: 15vw;
+  padding-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.card {
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 12px;
+  background-color: rgb(244, 244, 244);
+}
+
+.img-container {
+  width: 100%;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(230, 230, 230);
+}
+
+.image {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.content-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1em;
+}
+
+.overview {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.types {
+  font-size: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5em;
+  text-transform: capitalize;
+}
+
+.name {
+  font-size: 24px;
+  color: rgb(110, 110, 110);
+}
+
+.types .poison,
+.types .grass,
+.types .fire,
+.types .flying,
+.types .water,
+.types .bug,
+.types .normal,
+.types .ground,
+.types .fairy,
+.types .fighting,
+.types .electric,
+.types .psychic,
+.types .rock,
+.types .ice,
+.types .dragon,
+.types .ghost,
+.types .dark,
+.types .steel {
+  padding: 2px;
+  border-radius: 3px;
+}
+
+.stats {
+  width: 100%;
+  margin-top: 0.5em;
+}
+
+.stats-row {
+  font-size: 16px;
+  color: rgb(110, 110, 110);
+  border-bottom: 2px solid rgb(230, 230, 230);
+  padding-bottom: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats-name {
+  font-weight: 900;
+}
+
+.stats-row:last-child {
+  border-bottom: none;
+}
+
+.stats-value {
+  font-weight: 500;
+}
+
+.card:hover {
+  box-shadow: 1px 1px 2px 2px grey;
+  cursor: pointer;
+}
